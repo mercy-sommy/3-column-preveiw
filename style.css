@@ -1,0 +1,138 @@
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+h2 {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 25px;
+    margin-bottom: 30px;
+    color: var(--transparent-white);
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.5em;
+    margin-bottom: 25px;
+    color: var(--very-light-gray);
+}
+
+.container {
+    padding: 5em 2em;
+}
+
+.card {
+    padding: 40px;
+}
+
+.icon img {
+    margin-bottom: 20px;
+}
+
+.sedan-card {
+    background-color: var(--bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+.sedan-card .btn {
+    color: var(--bright-orange);
+}
+
+.suv-card {
+    background-color: var(--dark-cyan);
+}
+
+.suv-card .btn {
+    color: var(--dark-cyan);
+}
+
+.luxury-card {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+.luxury-card .btn {
+    color: var(--very-dark-cyan);
+}
+
+.btn {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 15px 25px;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--transparent-white);
+}
+
+@media (min-width: 789px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .card {
+        padding: 40px;
+    }
+
+    p{
+        margin-bottom: 100px;
+    }
+
+    .sedan-card {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .luxury-card {
+        border-radius: 0 10px 10px 0;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
